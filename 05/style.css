@@ -1,0 +1,59 @@
+*{
+    text-decoration: underline;
+}
+/* h3{
+    color: red;
+    background-color: black;
+} */
+p{
+    background-color: rgb(75, 75, 12);
+}
+h3,
+h4{
+    color: rgb(50, 160, 3);
+    background-color: black;
+}
+/* DRY */
+
+h3,
+h4{
+    color: #00cfff;
+}
+p span{
+    color: rgb(241, 245, 241);
+}
+span{
+    color: blueviolet;
+}
+header nav a{
+    background-color: yellow;
+}
+#bottom{
+    background-color: purple;
+    color: white;
+}
+.text-card{
+    background-color: blue;
+    color: yellow;
+}
+.text-card.big{
+    font-size: 20px;
+}
+
+ul li:first-child{
+    background-color: yellow;
+}
+ul li:last-child{
+    background-color: rgb(255, 0, 191);
+}
+ul li:nth-child(3){
+    background-color: green;
+}
+/*
+Поганий варіант неймінгу  
+.green-button{
+    background-color: rgb(243, 13, 209);
+} */
+.button-order{
+    background-color: red;
+}
