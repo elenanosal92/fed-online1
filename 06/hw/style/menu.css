@@ -22,14 +22,15 @@ button {
     border-radius: 16px;
     border: none;
     background-color: #EDEDED;
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
 .menu-items {
     padding: 0 4px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+     margin-top: 0;
 }
 .menu-position {
     display: flex;
