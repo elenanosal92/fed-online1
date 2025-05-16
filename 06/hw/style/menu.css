@@ -26,18 +26,30 @@ button {
 }
 
 .menu-items {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 16px;
-    gap: 8px;
+    position: relative;
+    height: 101px;
 }
+
 .menu-position {
+    position: absolute;
+    width: 74px;
+    height: 74px;
     display: flex;
     flex-direction: column;
     align-items: center;
-     flex: 1;
+    justify-content: space-between;
 }
+
+.menu-position:nth-child(1) {
+    left: 0;
+}
+.menu-position:nth-child(2) {
+    left: calc(50% - 37px); /* centered */
+}
+.menu-position:nth-child(3) {
+    right: 0;
+}
+
 .position-img {
     width: 74px;
     height: 74px; 
@@ -51,7 +63,10 @@ button {
 .position-title {
     color: #C4C4C4; 
     font-size: 14px;
+    text-align: center;
 }
+
+/* Активное состояние */
 .menu-position:hover .position-img,
 .menu-position.active .position-img {
     background-color: #EAE2B7; 
@@ -60,6 +75,7 @@ button {
 .menu-position.active .position-title {
     color: black;
 }
+
 .yellow-bg {
     background-color: #EAE2B7;
 }
