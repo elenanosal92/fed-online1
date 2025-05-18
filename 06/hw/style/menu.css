@@ -24,20 +24,27 @@ button {
     background-color: #EDEDED;
     margin: 12px 0;
 }
-
-.menu-items {
-    position: relative;
-    height: 101px;
+.menu-items{
+    padding: 0 4px;
+    
 }
-
-.menu-position {
-    position: absolute;
+.position-img{
     width: 74px;
     height: 74px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #efefef;
+    padding: 18px;
+}
+
+.position-title{
+    color: #C4C4C4;
+    text-align: center;
+}
+.menu-position{
+    display: inline-block;
+    border: 0px solid black;
+    margin-right: 15px;
+    margin-top: 25px;
 }
 
 .menu-position:nth-child(1) {
