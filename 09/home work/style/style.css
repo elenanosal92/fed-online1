@@ -1,88 +1,83 @@
-body {
-  background-color: #000;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  color: white;
+*{
+    box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+}
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: flex-start;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    height: 1500px;
+    background-color: rgb(241, 241, 241);
+}
+.position-block {
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    z-index: 1;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.position-block.dia {
+    background-color: black;
+    top: 50px;
+    left: 50px;
+    padding: 128px 101px 109px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.title {
-  font-size: 3rem;
-  margin: 0;
+.dia img {
+    padding-bottom: 32px;
 }
 
-.flag-img {
-  width: 24px;
-  height: auto;
+.dia .flag {
+    padding-top: 32px;
+    border-radius: 6px;
+    width: 80px;
+    height: 60px;
+    background: linear-gradient(180deg, #2137FC 0%, #2137FB 50.01%, #FFD84B 50.04%, #FFD84B 100%);
+}
+.position-block.square {
+    background-color: #FFCE22;
+    z-index: 2;
+    top: 460px;
+    left: 460px;
 }
 
-/* ====== Общие стили для блоков ====== */
-
-.logo-block {
-  width: 512px;
-  height: 512px;
-  background-color: transparent;
+.square-glyph {
+    position: absolute;
+    top: 152px;
+    left: 72px;
+}
+.position-block.circle {
+    bottom: 90px;
+    right: 110px;
+    background-color: white;
+    border-top: 2px solid #2137FC;
+    border-bottom: 2px solid #2137FC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 34px;
 }
 
-.position-relative {
-  position: relative;
+.block-circle {
+    border-radius: 444px;
+    background-color: #FFCE22;
+    height: 444px;
+    position: relative;
 }
 
-.position-abs {
-  position: absolute;
+.circle-bg {
+    border-radius: 222px 222px 0 0;
+    width: 444px;
 }
 
-/* Слои */
-
-.layer-blue {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.layer-yellow {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #FFCC29;
-  z-index: 0;
-}
-
-.layer-wave {
-  top: 50%;
-  left: 50%;
-  width: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-/* Круглая версия */
-
-.circle-wrapper {
-  background: white;
-  padding: 16px;
-  border-radius: 16px;
-}
-
-.logo-circle {
-  border-radius: 50%;
-  overflow: hidden;
-}
+.circle-glyph {
+    position: absolute;
+    bottom: 28px;
+    left: 44px;
+    height: 204px;
+    width: 358px;
+    }
