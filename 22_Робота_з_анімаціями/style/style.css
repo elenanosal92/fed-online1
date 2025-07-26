@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #0f89fa;
+    font-family: "Philosopher", sans-serif;
+
+}
+  
+ 
+body {
+    background: #111; 
+}
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 54px;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 200px;
+  }
+  
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 2px solid #0f89fa;
+    color: #0f89fa;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 1s ease; 
+}
+  
+.btn.notify-me{
+    background: #0f89fa;
+    color: black;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+.btn.notify-me span{
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 2px solid #0f89fa;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 1s ease; 
+}
+
+.btn.hover-me {
+    color: #fff;
+}
+  
+
+.btn.offset {
+    position: relative;
+}
+
+.btn.circle-btn {
+    width: 125px;
+    height: 56px;
+    color: #fff;
+    border: none;
+    padding: 0;
+}
+  
+.btn.explore-more-green {
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.fl{
+    display: flex;
+    gap: 50px;
+    justify-content: center
+}
+.fill-in:hover{
+    background: rgb(15, 137, 250);
+    color: white;
+}
+.glowing:hover {
+    box-shadow:
+    0 0 6px 3px #0f89fa,
+    0 0 10px #0f89fa;
+}
+.btn.fill-up{
+    position: relative; 
+    overflow: hidden;
+}
+.btn.fill-up::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;   
+    height: 0;            
+    background: #0f89fa;   
+    z-index: -1;       
+    transition: 1s ease;   
+}
+.btn.fill-up:hover::before {
+  height: 100%;
+}
+.btn.fill-up:hover{
+    color: white;
+}
+.btn.fill-up{
+    position: relative; 
+    overflow: hidden;
+}
+.btn.slide{
+    position: relative; 
+    overflow: hidden;
+}
+.btn.slide::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;   
+    height: 100%;            
+    background: #0f89fa;   
+    z-index: -1;       
+    transition: 1s ease;   
+}
+.btn.slide:hover::before {
+  width: 100%;
+}
+.btn.slide:hover{
+    color: white;
+}
+.btn.raise:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 5px #0f89fa;
+}
+.btn.close{
+    position: relative; 
+    overflow: hidden;
+}
+.btn.close::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;   
+    height: 100%;            
+    background: #0f89fa;   
+    z-index: -1;       
+    transition: 1s ease;   
+}
+.btn.close:hover::before {
+  width: 50%;
+}
+.btn.close::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;   
+    height: 100%;            
+    background: #0f89fa;   
+    z-index: -1;       
+    transition: 1s ease;   
+}
+.btn.close:hover::after {
+    width: 50%;
+  }
+.btn.close:hover{
+    color: white;
+}
+
+.btn.notify-me {
+    position: relative;
+    overflow: hidden; 
+    width: 100px; 
+    height: 40px; 
+    background: #0f89fa;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn.notify-me span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+  
+
+.btn.notify-me .default-text {
+    transform: translateY(0%);
+    opacity: 1;
+    color: black;
+}
+  
+.btn.notify-me .hover-text {
+    transform: translateY(-100%);
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+}
+
+  .btn.notify-me:hover .default-text {
+    transform: translateY(100%); 
+    opacity: 0; 
+    color: rgba(255, 255, 255, 0); 
+}
+  
+.btn.notify-me:hover .hover-text {
+    transform: translateY(0%); 
+    opacity: 1;  
+    color: black;  
+}
+.btn.hover-me{
+    position: relative;
+    overflow: hidden;
+}
+.hover-me span{
+    transition: 1s ease; 
+}
+.btn.hover-me::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;   
+    height: 100%;            
+    background: #0f89fa;   
+    z-index: -1;       
+    transition: 1s ease;   
+    
+}
+.btn.hover-me:hover::before {
+  width: 100%;
+  
+}
+.btn.hover-me:hover{
+    color: white;
+}
+.btn.hover-me:hover span {
+    color: white;
+
+}
+.btn.zoom {
+    position: relative;
+    overflow: hidden;
+    color: #0f89fa; 
+    border: 2px solid #0f89fa;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.btn.zoom:hover {
+    transform: scale(1.2); 
+}
+.btn.circle-btn{
+    position: relative; 
+    overflow: hidden;
+}
+.btn.circle-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;  
+    height: 90%;            
+    background: #0f89fa;   
+    z-index: -1;       
+    border-radius: 50%;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease;
+}
+.btn.circle-btn:hover::before {
+    width: 96%; 
+    height: 90%; 
+    border-radius: 30px; 
+}
+.btn.circle-btn:hover{
+    color: white;
+    
+}
+
+.btn.offset {
+    position: relative;
+    overflow: hidden;
+    color: #0f89fa;
+    border: 2px solid #0f89fa;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    box-shadow: 4px 4px 0 #0f89fa;  
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.offset:hover {
+    transform: translate(4px, 4px); 
+    background: #0f89fa; 
+    color: white;
+    box-shadow: 0 0 0 #0f89fa; 
+}
+
+.btn.explore-more {
+    position: relative;
+    overflow: hidden;
+    color: #0f89fa;
+    border: 2px solid #0f89fa;
+    padding: 10px 0 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0px; 
+    background: none;
+    transition: width 0.3s ease, background 0.3s ease, color 0.3s ease, gap 0.3s ease;
+}
+
+.btn.explore-more i {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn.explore-more:hover {
+    width: 200px; 
+    background: #0f89fa;
+    color: white;
+    gap: 10px; 
+}
+
+.btn.explore-more:hover i {
+    opacity: 1;
+    transform: translateX(0);
+    color: white;
+}
+/* Довго я намагався зробити цю кнопку так і не зрозумів і знайшов вже готове рішення в інтернеті*/
+.button {
+    --offset: 10px;
+    --border-size: 2px;
+  
+    display: block;
+    position: relative;
+    padding: 0.5em 0.5em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background 0.8s ease;
+  }
+
+  .button:hover {
+    background: rgba(100, 0, 0, 0.03);
+  }
+
+  .button__horizontal,
+  .button__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+  }
+
+  .button__horizontal::before,
+  .button__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+  }
+
+.button__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.button:hover .button__horizontal {
+    transform: scaleX(0);
+}
+
+.button__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.button__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+  
+.button:hover .button__vertical {
+    transform: scaleY(0);
+}
+
+.btn.explore-more-green {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    border: none;
+    background: none;
+    z-index: 1;
+    perspective: 800px;
+}
+
+.btn.explore-more-green::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 78%;
+    background: #2aae2c;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+    transform-origin: center;
+    transition: transform 0.8s ease-in-out, width 0.6s ease-in-out, height 0.6s ease-in-out, clip-path 0.6s ease-in-out, left 0.6s ease-in-out;
+}
+
+.btn.explore-more-green::after {
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 12px;
+    width: 54%;
+    height: 70%;
+    background: #0f89fa;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+    z-index: -1;
+    transform-origin: center;
+    transition: transform 0.8s ease-in-out, width 0.6s ease-in-out, height 0.6s ease-in-out, clip-path 0.6s ease-in-out, right 0.6s ease-in-out, top 0.6s ease-in-out;
+}
+
+
+.btn.explore-more-green:hover::before {
+    transform: rotateY(180deg);
+    width: 60%;
+    height: 100%;
+    left: 50px; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.btn.explore-more-green:hover::after {
+    transform: rotateY(180deg);
+    width: 40%;
+    height: 100%;
+    top: 0; 
+    right: 80px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
