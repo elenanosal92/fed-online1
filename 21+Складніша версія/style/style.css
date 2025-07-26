@@ -1,0 +1,724 @@
+@import url(reset.css);
+*{
+  box-sizing: border-box;
+}
+.Start {
+  background: url('../img/banne1.png') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.darker{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50px 140px;
+}
+.logo {
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+}
+.logo div:last-child{
+  color: rgb(255, 153, 0);
+}
+  
+ 
+nav {
+  display: flex;
+  align-items: center;
+}
+  
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Philosopher", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+nav ul li a:hover {
+  color: rgb(255, 153, 0);
+}
+  
+.tour-btn {
+  text-decoration: none;
+  padding: 6px 14px;
+  color: rgb(255, 153, 0);
+  font-family: "Philosopher", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.tour-btn:hover {
+  background: rgb(255, 153, 0);
+  color: #fff;
+}
+.hero {
+  min-height: 90vh; 
+  display: flex;
+  padding-left: 200px;
+  padding-right: 150px;
+  align-items: center;
+}
+.hero-space{
+  display: flex;
+  gap: 180px;
+}
+.hero-content h1 {
+  font-family: "Philosopher", serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.hero-content h1 .highlight {
+  color: orange;
+}
+  
+.hero-content p.quote {
+  font-family: "Philosopher", serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+  
+.hero-content p.author {
+  font-family: "Philosopher", serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgb(255, 153, 0);
+}
+.our-story {
+  background-color: #F6FDEE;
+  padding: 120px 140px;
+}
+
+.our-story h2 {
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.our-story h2 span {
+  color: #FF9900; 
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; 
+  margin-bottom: 30px;
+} 
+.story-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.story-column h3 {
+  color: rgb(255, 153, 0);
+  font-family: "Philosopher", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.story-column:nth-child(2) h3 {
+  text-align: center;
+}
+.story-column p {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.story-column:nth-child(2) p {
+  text-align: center;
+}
+.read-more{
+  display: flex;
+  justify-content: flex-end;
+}
+.read-more a {
+  font-family: "Philosopher", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 5px solid rgb(255, 230, 0);;
+  text-align: right;
+}
+.read-more:hover {
+  color: orange;
+}
+.story-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.collection-section {
+  position: relative;
+  padding: 40px 140px;
+  overflow: hidden; 
+  min-height: 600px; 
+}
+.collection-section::before,
+.collection-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #FF9900;
+  z-index: 0; 
+}
+.collection-section::before {
+  top: 30%;
+}
+.collection-section::after {
+  bottom: 25%;
+}
+.collection-heading {
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 1; 
+}
+.collection-heading h2 {
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.collection-heading h2 span {
+  color: rgb(255, 153, 0);
+}
+.collection-cards {
+      
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+  position: relative;
+  z-index: 1; 
+}
+.card {
+  position: relative;
+  flex: 1;
+  min-width: 360px;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.7)
+  );
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2; 
+  padding: 0px 20px 35px;
+}
+.card-content .city {
+  color: rgb(255, 255, 255);
+  font-family: "Philosopher", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.card-content .city::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100px;
+  height: 5px;
+  background-color: rgb(255, 230, 0);
+}
+
+.card-content p {
+  color: rgb(255, 255, 255);
+  font-family: "Philosopher", serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+   
+.view-more {
+  margin: 30px auto 0;
+  text-align: right;
+  position: relative;
+  z-index: 1; 
+}
+.view-more a {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 5px solid rgb(255, 230, 0);
+}
+.view-more a:hover {
+  color: orange;
+}
+.airship-section {
+  background: url("../img/Pngtree.png") no-repeat center center;
+  background-size: cover;
+  padding: 60px 110px 110px 110px;      
+}
+
+
+.airship-inner {
+  width: 100%;
+  display: flex;
+  gap: 280px;
+  margin-bottom: 120px;
+}
+
+.left-side {
+  margin-left: 200px;
+  padding-top: 40px;
+}
+
+.brand {
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 80px;
+}
+.brand span {
+  color: orange; 
+}
+
+.airship {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+.right-side h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.right-side h2 span {
+  color: orange; 
+}
+
+.right-side p {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.diversity-section {
+  position: relative;
+  padding: 40px 20px;
+  min-height: 600px;
+  overflow: hidden; /* чтобы полосы не вылезали */
+}
+.diversity-section .view-more{
+  margin-right: 330px;
+}
+.diversity-section::before,
+.diversity-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: rgb(255, 153, 0);
+  z-index: 0;
+}
+.diversity-section::before {
+  top: 20%;
+}
+.diversity-section::after {
+  bottom: 15%;
+}
+
+
+.diversity-heading {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  position: relative;
+  z-index: 1;
+}
+.diversity-heading h2 {
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.diversity-heading h2 span {
+  color: rgb(255, 153, 0);
+}
+
+.image-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 1; 
+}
+
+
+.left-col,
+.center-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.big-vertical-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.row-of-two {
+  display: flex;
+  gap: 10px;
+}
+.row-of-two img {
+  width: 100%;
+  height: 140px; 
+  object-fit: cover;
+  display: block;
+}
+
+.wide-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.tall-img {
+  width: 100%;
+  height: 620px; 
+  object-fit: cover;
+  display: block;
+}
+
+
+.right-col-grid img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-col-grid .big-vertical {
+  height: 300px;       
+}
+.hard {
+  display: grid
+  ;
+      grid-template-columns: 173px 182px 173px;
+      grid-template-rows: 135px 160px;
+      grid-template-areas:
+          "red yellow blue"
+          "red black blue";
+      gap: 10px;
+      margin-top: 15px;
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+}
+
+.red {
+  grid-area: red;
+}
+.yellow {
+  grid-area: yellow;
+}
+.black {
+  grid-area: black;
+}
+.blue {
+  grid-area: blue;
+}
+
+.block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+.logo_sekcion{
+  background: rgb(246, 253, 238);
+  padding: 130px 160px;
+}
+.Achivm{
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 80px;
+  margin-left: 300px;
+}
+.Achivm span{
+  color: orange;
+}
+
+.awards-container {
+  display: grid;
+    grid-template-columns: 231px 500px 290px;
+    align-items: center;
+    gap: 110px;
+    justify-content: center;
+    width: 109%;
+}
+
+.logo_sekcion .left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo_sekcion .left-col,
+.right-col img{
+  width: 110%;
+}
+.main-bg {
+  /* Замените "images/bg.jpg" на путь к вашей картинке */
+  background: url("../img/hills.png") no-repeat center top;
+  background-size: cover;
+  padding-bottom: 40px; /* чтобы был отступ снизу */
+  position: relative;
+}
+
+/* Шапка с заголовками */
+.headerSection {
+  position: relative;
+  top: 140px;
+  left: 9%;
+  width: 400px;
+  height: 286px;
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+.headerSection h1 span {
+  color: #F58614;
+}
+
+.headerSection h2 span {
+  color: #F58614; 
+}
+
+.offices {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 400px 400px;
+  margin: 0px 0px 40px 500px;
+  padding: 0 20px;
+}
+
+/* Каждый блок-офис */
+.office {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.office h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.office p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.office strong {
+  color: #333;
+}
+.mail-form {
+  grid-column: 2 / span 2; 
+  grid-row: 2;            
+}
+
+.mail-form h2{
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.mail-form label {
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+.mail-form input,
+.mail-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  padding: 6px 0;
+  font-family: "Philosopher", serif;
+  font-size: 0px;
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none; 
+  border-top: 1px solid #000; 
+  margin: 40px 0 20px; 
+}
+
+
+.main-footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;            
+  padding: 10px 20px 20px;           
+  font-size: 0.9rem;  
+  margin: 0px 150px;         
+  border-top: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.main-footer a {
+  color: #000; 
+  text-decoration: none; 
+}
+.btn{
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+.btn button{
+  color: rgb(0, 0, 0);
+  font-family: "Philosopher", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 5px;
+  background: rgb(255, 153, 0);
+  border: none;
+  padding: 10px 60px;
+  cursor: pointer;
+  float: right;                         
+}
