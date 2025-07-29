@@ -1,0 +1,125 @@
+/* Адаптація для мобільних (до 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .darker, .our-story, .collection-section, .airship-section, .logo_sekcion, .main-bg {
+    padding: 20px !important;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-space {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .hero-content p.quote,
+  .hero-content p.author {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 100% !important;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .airship-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-side {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .right-side p {
+    max-width: 100%;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .row-of-two {
+    flex-direction: column;
+  }
+
+  .hard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "red yellow"
+      "black blue";
+    gap: 10px;
+  }
+
+  .awards-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .headerSection {
+    width: 100%;
+    padding: 0;
+    position: static;
+    font-size: 28px;
+  }
+
+  .offices {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mail-form,
+  .btn {
+    grid-column: auto;
+  }
+
+  .btn button {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

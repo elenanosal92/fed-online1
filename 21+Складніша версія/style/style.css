@@ -553,7 +553,7 @@ nav ul li a:hover {
     align-items: center;
     gap: 110px;
     justify-content: center;
-    width: 109%;
+    width: 100%;
 }
 
 .logo_sekcion .left-col,
@@ -578,7 +578,7 @@ nav ul li a:hover {
 .headerSection {
   position: relative;
   top: 140px;
-  left: 9%;
+  left: 3%;
   width: 400px;
   height: 286px;
   font-family: "Philosopher", serif;
@@ -600,9 +600,9 @@ nav ul li a:hover {
 
 .offices {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 352px 352px 352px;
   grid-template-rows: 400px 400px;
-  margin: 0px 0px 40px 500px;
+  margin: 0px 0px 40px 390px;
   padding: 0 20px;
 }
 
@@ -689,7 +689,7 @@ hr {
   align-items: center;            
   padding: 10px 20px 20px;           
   font-size: 0.9rem;  
-  margin: 0px 150px;         
+  margin: 0px 0px;         
   border-top: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: "Philosopher", serif;
